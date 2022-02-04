@@ -1,0 +1,17 @@
+ public static boolean areReversed(char [] a, char [] b)
+    {
+        int x = b.length-1; \\variable for array b's number of elements 
+
+        for(int i = 0; i < a.length; i++) \\loop through a
+        {
+            if(b[x] != a[i]) \\check to see if the elements at the start of a match with the end of b's
+                return false; \\ returns false if it doesn't
+
+            x--; \\decrement
+
+
+        }
+
+
+        return true; \\returns true if for loop goes through
+    }
